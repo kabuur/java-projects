@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignmentmultiforms.Redister">
+   <children>
+      <Button fx:id="btnLogOut" layoutX="168.0" layoutY="193.0" mnemonicParsing="false" onAction="#LogOutAction" prefHeight="31.0" prefWidth="239.0" text="LogOut" />
+      <Label layoutX="139.0" layoutY="259.0" prefHeight="21.0" prefWidth="304.0" text="this is register form form" />
+   </children>
+</AnchorPane>

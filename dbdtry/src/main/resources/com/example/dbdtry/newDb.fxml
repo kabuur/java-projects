@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="536.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dbdtry.NewDb">
+   <children>
+      <Label layoutX="46.0" layoutY="37.0" text="Name" />
+      <Label layoutX="51.0" layoutY="66.0" text="ID" />
+      <Label layoutX="46.0" layoutY="101.0" text="Age" />
+      <TextField fx:id="txtname" layoutX="138.0" layoutY="33.0" />
+      <TextField fx:id="txtage" layoutX="138.0" layoutY="97.0" />
+      <TextField fx:id="txtid" layoutX="138.0" layoutY="62.0" />
+      <TableView fx:id="tableView" layoutX="38.0" layoutY="306.0" prefHeight="200.0" prefWidth="387.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="209.60004043579102" text="Name" />
+          <TableColumn fx:id="colID" prefWidth="51.99992370605469" text="Id" />
+            <TableColumn fx:id="colAge" prefWidth="87.20001220703125" text="Age" />
+        </columns>
+      </TableView>
+      <Button fx:id="Insert" layoutX="42.0" layoutY="148.0" mnemonicParsing="false" onAction="#inserActio" text="Insert" />
+      <Button fx:id="Display" layoutX="42.0" layoutY="268.0" mnemonicParsing="false" onAction="#DisplayActon" text="display" />
+      <Button fx:id="Delete" layoutX="206.0" layoutY="148.0" mnemonicParsing="false" onAction="#DeleteAction" text="Delete" />
+      <Button fx:id="Update" layoutX="112.0" layoutY="148.0" mnemonicParsing="false" onAction="#UpdateAction" text="Update" />
+   </children>
+</AnchorPane>

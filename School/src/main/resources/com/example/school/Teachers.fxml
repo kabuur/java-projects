@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="692.0" prefWidth="932.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.school.Teachers">
+   <children>
+      <Pane layoutX="14.0" layoutY="104.0" prefHeight="390.0" prefWidth="382.0" style="-fx-background-color: #030666;">
+         <children>
+            <Label layoutX="17.0" layoutY="122.0" text="Teacher Gender" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="206.0" text="Teacher Phone" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="164.0" text="Teacher Age" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="77.0" text="Teacher Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="30.0" text="TeacherID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtid" layoutX="141.0" layoutY="24.0" prefHeight="32.0" prefWidth="213.0" />
+            <TextField fx:id="txtname" layoutX="141.0" layoutY="70.0" prefHeight="32.0" prefWidth="213.0" />
+            <TextField fx:id="txtage" layoutX="141.0" layoutY="160.0" prefHeight="32.0" prefWidth="213.0" />
+            <TextField fx:id="txtgender" layoutX="141.0" layoutY="115.0" prefHeight="32.0" prefWidth="213.0" />
+            <TextField fx:id="txtphone" layoutX="141.0" layoutY="199.0" prefHeight="32.0" prefWidth="213.0" />
+            <Button fx:id="btninsert" layoutX="95.0" layoutY="267.0" mnemonicParsing="false" onAction="#insertaction" text="Insert">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="btnupdate" layoutX="192.0" layoutY="267.0" mnemonicParsing="false" onAction="#updateaction" text="Update">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="btndelete" layoutX="282.0" layoutY="267.0" mnemonicParsing="false" onAction="#deleteaction" text="Delete">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Button fx:id="btnrefresh" layoutX="879.0" layoutY="111.0" mnemonicParsing="false" onAction="#refreshaction" text="Refresh" AnchorPane.rightAnchor="18.399999999999977">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="btnsearch" layoutX="539.0" layoutY="110.0" mnemonicParsing="false" onAction="#searchaction" text="Search" AnchorPane.rightAnchor="362.4">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <TableView fx:id="TableViewer" layoutX="422.0" layoutY="144.0" onMouseClicked="#TableViewAction" prefHeight="350.0" prefWidth="518.0" AnchorPane.leftAnchor="422.0" AnchorPane.rightAnchor="13.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="68.0" text="Teacher ID" />
+            <TableColumn fx:id="colName" prefWidth="160.0" text="Teacher Name" />
+            <TableColumn fx:id="ColGen" prefWidth="99.2000732421875" text="Teacher Gen" />
+            <TableColumn fx:id="colAge" prefWidth="93.5999755859375" text="Teacher Age" />
+            <TableColumn fx:id="colPhone" prefWidth="102.4000244140625" text="Teacher Phone" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtsearch" layoutX="636.0" layoutY="108.0" prefHeight="32.0" prefWidth="213.0" AnchorPane.rightAnchor="103.79999999999998" />
+      <HBox alignment="CENTER" layoutX="3.0" layoutY="-1.0" prefHeight="99.0" prefWidth="932.0" style="-fx-background-color: #030666;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="26.0" prefWidth="564.0" style="-fx-background-color: #030666;" text="Teacher InformationRegistration form" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

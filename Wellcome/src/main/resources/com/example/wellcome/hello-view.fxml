@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wellcome.HelloController">
+   <children>
+      <Label fx:id="name" layoutX="39.0" layoutY="36.0" text="name">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font></Label>
+      <Label fx:id="lbloutbut" layoutX="95.0" layoutY="89.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font></Label>
+      <TextField fx:id="txtname" layoutX="136.0" layoutY="37.0" />
+      <Button layoutX="255.0" layoutY="149.0" mnemonicParsing="false" onAction="#click" text="hello" textAlignment="JUSTIFY" textFill="#da0e0e">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

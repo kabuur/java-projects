@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="574.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignmentmultiforms.Dashboard">
+   <children>
+      <MenuBar layoutY="67.0" prefHeight="32.0" prefWidth="619.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Exit" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="color">
+              <items>
+                <MenuItem fx:id="menueRed" mnemonicParsing="false" onAction="#redAction" text="red" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="menueGreen" mnemonicParsing="false" onAction="#GreenAction" text="green" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem fx:id="MenueAbout" mnemonicParsing="false" onAction="#AboutAction" text="About Us" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Pane layoutX="-1.0" layoutY="-2.0" prefHeight="70.0" prefWidth="619.0" style="-fx-background-color: yellow;">
+         <children>
+            <Text fill="#dd1010" layoutX="232.0" layoutY="49.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBORD" wrappingWidth="247.2080078125">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="101.0" prefHeight="476.0" prefWidth="619.0" style="-fx-background-color: red;">
+         <children>
+            <Button fx:id="btnRgstr" layoutX="59.0" layoutY="116.0" mnemonicParsing="false" onAction="#Rgst" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: ;" text="Register" />
+            <Button fx:id="BtnView" layoutX="265.0" layoutY="116.0" mnemonicParsing="false" onAction="#ViewAction" prefHeight="31.0" prefWidth="103.0" text="View" />
+            <Button fx:id="BtnReport" layoutX="455.0" layoutY="116.0" mnemonicParsing="false" onAction="#RportAction" prefHeight="31.0" prefWidth="103.0" text="report" />
+            <Button fx:id="btnExit" layoutX="311.0" layoutY="215.0" mnemonicParsing="false" onAction="#ExitAction" prefHeight="31.0" prefWidth="103.0" text="logout" />
+            <ImageView fitHeight="176.0" fitWidth="193.0" layoutX="31.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/KCT/Desktop/Capture.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

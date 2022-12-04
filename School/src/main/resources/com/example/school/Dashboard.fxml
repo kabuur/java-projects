@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="676.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.school.Dashboard">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" />
+      <VBox layoutY="-1.0" prefHeight="690.0" prefWidth="244.0" style="-fx-background-color: #030666;" AnchorPane.bottomAnchor="1.0" AnchorPane.topAnchor="-1.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="244.0" style="-fx-background-color: yellow;">
+               <children>
+                  <ImageView fx:id="Img" fitHeight="150.0" fitWidth="200.0" focusTraversable="true" layoutX="22.0" layoutY="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@school%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Button fx:id="btnDashboard" mnemonicParsing="false" onAction="#DashboardAction" prefHeight="62.0" prefWidth="238.0" style="-fx-font-size: 20pt; -fx-background-color: #2b04d6;" text="Dashboard" textAlignment="JUSTIFY" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="1.0" />
+               </font></Button>
+            <Button fx:id="btnstudent" mnemonicParsing="false" onAction="#studentAction" prefHeight="62.0" prefWidth="238.0" style="-fx-font-size: 20pt; -fx-background-color: #2b04d6;" text="student" textAlignment="JUSTIFY" textFill="#f2ecec">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTeachers" mnemonicParsing="false" onAction="#TeachersAction" prefHeight="62.0" prefWidth="238.0" style="-fx-font-size: 20pt; -fx-background-color: #2b04d6;" text="Teachers" textAlignment="JUSTIFY" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="1.0" />
+               </font></Button>
+            <Button fx:id="btnUsers" mnemonicParsing="false" onAction="#UsersAction" prefHeight="62.0" prefWidth="238.0" style="-fx-font-size: 20pt; -fx-background-color: #2b04d6;" text="Users" textAlignment="JUSTIFY" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="1.0" />
+               </font></Button>
+            <Button fx:id="btnLock" mnemonicParsing="false" onAction="#LockAction" prefHeight="62.0" prefWidth="238.0" style="-fx-font-size: 20pt; -fx-background-color: #2b04d6;" text="Lock" textAlignment="JUSTIFY" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="1.0" />
+               </font></Button>
+            <Button fx:id="btnExit" mnemonicParsing="false" onAction="#LockAction" prefHeight="62.0" prefWidth="238.0" style="-fx-font-size: 20pt; -fx-background-color: #2b04d6;" text="Exit" textAlignment="JUSTIFY" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <BorderPane fx:id="borderpane" layoutX="244.0" layoutY="-7.0" prefHeight="687.0" prefWidth="990.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="244.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="-7.0">
+         <top>
+            <Pane prefHeight="6.0" prefWidth="932.0" style="-fx-background-color: brown;" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <Pane nodeOrientation="RIGHT_TO_LEFT" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0207b3;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="92.0" layoutY="213.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2b04d6;">
+                     <children>
+                        <Label layoutX="39.0" layoutY="150.0" text="Students" textFill="WHITE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblStudents" layoutX="89.0" layoutY="122.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="106.0" fitWidth="120.0" layoutX="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="637.0" layoutY="213.0" prefHeight="200.0" prefWidth="258.0" style="-fx-background-color: #2b04d6;">
+                     <children>
+                        <Label layoutX="114.0" layoutY="150.0" text="Users" textFill="WHITE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblusers" layoutX="136.0" layoutY="114.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="106.0" fitWidth="120.0" layoutX="104.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@student.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="380.0" layoutY="213.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2b04d6;">
+                     <children>
+                        <Label layoutX="47.0" layoutY="150.0" text="Teachers" textFill="WHITE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTeachers" layoutX="95.0" layoutY="114.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="106.0" fitWidth="120.0" layoutX="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Teachar.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="-3.0" prefHeight="209.0" prefWidth="960.0" style="-fx-background-color: #030666;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="74.0" text="IBNU-MUBARAK SHOOL PRAMIRY SCHOOL" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="44.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </center></BorderPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
